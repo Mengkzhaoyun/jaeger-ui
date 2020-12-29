@@ -24,5 +24,5 @@ docker run --rm \
 -v $PWD/:/go/src/github.com/jaegertracing/jaeger-ui \
 -w /go/src/github.com/jaegertracing/jaeger-ui \
 registry.cn-qingdao.aliyuncs.com/wod/devops-node:14.15.0-buster \
-bash -c 'yarn && yarn build'
+bash -c 'yarn install --frozen-lockfile && cd packages/jaeger-ui && yarn build'
 ```

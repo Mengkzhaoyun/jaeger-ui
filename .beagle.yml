@@ -26,7 +26,8 @@ pipeline:
     volumes:
       - /data/cache/yarn/:/usr/local/share/.cache/yarn
     commands:
-      - yarn
+      - yarn install --frozen-lockfile
+      - cd packages/jaeger-ui
       - yarn build
 
   store-cache:
