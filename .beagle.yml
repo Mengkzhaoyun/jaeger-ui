@@ -2,7 +2,7 @@ platform: 10.11.92.33
 
 workspace:
   base: /go
-  path: src/github.com/prometheus-operator/prometheus-operator
+  path: src/github.com/jaegertracing/jaeger-ui
 
 clone:
   git:
